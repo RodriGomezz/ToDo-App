@@ -11,7 +11,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  background: linear-gradient(to bottom right, #0f194f, #9a1e6a);
+  background: linear-gradient(to bottom right, #0f194f , #f7137e);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
   background-attachment: fixed;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -219,6 +221,18 @@ body {
     opacity: 1;
     top: 200%;
   }
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @media (max-width: 575px) {
